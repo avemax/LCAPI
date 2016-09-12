@@ -10,7 +10,7 @@
 
 1: http://joeywhelan.blogspot.com/2015/11/lendingclub-rest-api-access-with-python.html
 2: https://github.com/joeywhelan/lcInvestor/blob/master/lcInvestor.py
-
+3: [LCAPI reference](https://www.lendingclub.com/developers/add-funds.action)
 
 # Summary
 LendingClub is one of the peer-to-peer lenders out there.  They provide a REST API for simple account transactions such as querying account data, available loans, and submitting loan orders.  In this article, I'll be discussing the development of a simple auto-investment tool I wrote in Python with the Lending Club API.  The application reads a user-configurable file for options and then if funds are available and loans exist that meet the user's criteria, orders are placed with LendingClub for those loans.  The application was designed to be run out of a cron script to periodically check funds + loans and place orders accordingly.
